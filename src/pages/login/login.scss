@@ -1,0 +1,77 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.login {
+  background-color: #E5E5E5;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Inter', 'Arial Narrow', Arial, sans-serif;
+
+  .container {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20;
+    margin: 100px auto;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .form {
+      width: 400px;
+
+      h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      span {
+        color: #4CAF50;
+        font-weight: bold;
+      }
+
+      label {
+        font-size: 20px;
+      }
+
+      input {
+        display: block;
+        width: 80%;
+        margin: 10px 0;
+        padding: 10px 0;
+        border-radius: 10px;
+        border: 1px solid $dark-bg;
+      }
+
+      button {
+        width: 80%;
+        border-radius: 10px;
+        text-transform: uppercase;
+        background-color: #4CAF50;
+        padding: 10px 0;
+        border: none;
+        color: white;
+        transition: .3s all;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #2f6d32;
+        }
+      }
+
+    }
+
+    .image {
+      width: 400px;
+
+      img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+}
